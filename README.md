@@ -1,0 +1,2 @@
+# democraticfunding-static
+ 
