@@ -1,0 +1,24 @@
+html {
+  font-family: "Roboto", helvetica, arial, san-serif;
+  height: 100%;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("/img/quadradic-lands-co-bg.png");
+  background-size: contain;
+}
+
+#contain {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(250, 250, 250, 0.8);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
