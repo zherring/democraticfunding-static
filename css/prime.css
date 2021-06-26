@@ -13,6 +13,11 @@ p {
   font-size: 0.95rem;
   line-height: 1.25rem;
 }
+@media (max-width: 599px) {
+  p {
+    line-height: 1.2rem;
+  }
+}
 
 a, a:visited, a:hover, a:active {
   text-decoration: none;
@@ -20,9 +25,13 @@ a, a:visited, a:hover, a:active {
   animation: rainbow1 10s linear infinite;
   animation-direction: alternate;
 }
+a.odd, a:visited.odd, a:hover.odd, a:active.odd {
+  animation: rainbow2 10s linear infinite;
+  animation-direction: alternate;
+}
 
 body {
-  background: url("img/quadradic-lands-co-bg-transparent.png"), linear-gradient(247.85deg, #E0E0F4 6.44%, rgba(225, 224, 245, 0) 62.49%), linear-gradient(203.9deg, #E7F4F6 20.48%, #F8F6F7 94.07%);
+  background: linear-gradient(247.85deg, #E0E0F4 6.44%, rgba(225, 224, 245, 0) 62.49%), linear-gradient(203.9deg, #E7F4F6 20.48%, #F8F6F7 94.07%);
 }
 
 h1, h2, h3, h4 {
@@ -32,21 +41,37 @@ h1, h2, h3, h4 {
 #contain {
   padding: 5rem;
 }
+@media (max-width: 599px) {
+  #contain {
+    padding: 1.2rem;
+  }
+}
 
 #left, #right {
   width: 48vw;
 }
+@media (max-width: 599px) {
+  #left, #right {
+    width: 85%;
+  }
+}
 
 #left h1 {
-  font-size: 4rem;
+  font-size: 9vmin;
   text-align: left;
   margin: 0;
   padding: 0;
   color: #FFDB5D;
-  animation: rainbow2 10s linear infinite;
+  animation: rainbow2 15s linear infinite;
   animation-direction: alternate;
-  line-height: 3.8rem;
-  padding-top: 15vh;
+  line-height: 6vmax;
+  padding-top: 15vmin;
+}
+@media (max-width: 599px) {
+  #left h1 {
+    font-size: 10vw;
+    line-height: 10vw;
+  }
 }
 
 header {
@@ -89,5 +114,13 @@ header {
   }
   0% {
     color: #020289;
+  }
+}
+.my-box {
+  padding: 10px;
+}
+@media (min-width: 1200px) {
+  .my-box {
+    padding: 20px;
   }
 }
