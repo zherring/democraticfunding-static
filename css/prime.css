@@ -64,7 +64,7 @@ h1, h2, h3, h4 {
   color: #FFDB5D;
   animation: rainbow2 15s linear infinite;
   animation-direction: alternate;
-  line-height: 6vmax;
+  line-height: 7vmin;
   padding-top: 15vmin;
 }
 @media (max-width: 599px) {
