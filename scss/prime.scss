@@ -89,7 +89,7 @@ h1,h2,h3,h4 {
     animation: rainbow2 15s linear infinite;
     animation-direction: alternate;
 
-    line-height: 7vmin;
+    line-height: 9vmin;
     padding-top: 15vmin;
 
     @include for-phone-only {
